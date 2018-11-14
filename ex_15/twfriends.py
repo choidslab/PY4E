@@ -1,5 +1,5 @@
 import urllib.request, urllib.parse, urllib.error
-import ex_13.twurl
+from ex_15 import twurl
 import json
 import sqlite3
 import ssl
@@ -98,3 +98,21 @@ while True:
     print('Remaining', headers['x-rate-limit-remaining'])
     conn.commit()
 cur.close()
+
+# 실행결과 (friends.sqlite 파일 생성)
+#
+# Retrieving account Ddooseop
+# Remaining 14
+# Sci_Hub
+# cnnbrk
+# kleague
+# theKFA
+# BBCNews
+# Durannobooks
+# fromtheline
+# seongnamcity
+# LFCKorea
+# boannews
+# SFC_Seongnam
+# New accounts= 11  revisited= 0
+# Remaining 14
